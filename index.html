@@ -1,1 +1,207 @@
-111
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Расценки на дрова — Иван 724-733</title>
+
+  <!-- Meta -->
+  <meta name="description" content="Берёзовые дрова: вязанки и колотые с доставкой. Честные цены. Звоните: 724-733.">
+  <meta property="og:title" content="Расценки на дрова — Иван 724-733">
+  <meta property="og:description" content="Берёзовые дрова: вязанки и колотые с доставкой. Звоните: 724-733.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="3b.jpg">
+  <meta name="format-detection" content="telephone=no">
+
+  <style>
+    :root{
+      --bg: #faf9f6;
+      --ink:#1f2937;
+      --muted:#6b7280;
+      --brand:#0ea5e9;
+      --card:#ffffff;
+      --ring: rgba(14,165,233,.25);
+      --shadow: 0 8px 24px rgba(0,0,0,.06);
+      --radius: 16px;
+      --maxw: 1040px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%}
+    body{
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--ink);
+      background:var(--bg);
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:24px}
+    header{
+      display:grid; gap:20px; align-items:center;
+      padding: 28px 0 12px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:14px;
+    }
+    .brand img{
+      width:56px;height:56px;border-radius:12px;object-fit:cover; box-shadow:var(--shadow)
+    }
+    .brand h1{
+      font-size: clamp(20px, 4vw, 28px);
+      margin:0; letter-spacing:.2px;
+    }
+    .muted{color:var(--muted)}
+    .phone{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:12px 16px; border-radius:999px; background:#fff; box-shadow:var(--shadow);
+      transition: transform .12s ease, box-shadow .12s ease, outline .12s ease;
+      outline: 3px solid transparent;
+    }
+    .phone:focus-visible{outline-color:var(--ring)}
+    .phone:hover{transform: translateY(-1px)}
+    .hero{
+      display:grid; grid-template-columns: 1fr; gap:20px; margin:18px 0 10px;
+    }
+    .hero .img{
+      border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow); background:#ddd;
+    }
+    .hero .img img{width:100%; height:380px; object-fit: cover; display:block}
+    .hero .lead{
+      display:flex; flex-direction:column; justify-content:center; gap:12px;
+      padding:8px 4px;
+    }
+    .lead h2{font-size: clamp(22px, 4.4vw, 32px); line-height:1.2; margin:0}
+    .lead p{margin:0; color:var(--muted); font-size: clamp(14px, 2.6vw, 16px)}
+    .cta{
+      margin-top:6px; display:flex; gap:12px; flex-wrap:wrap
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 18px; border-radius:12px; background:var(--brand); color:#fff; font-weight:600;
+      box-shadow: var(--shadow); transition: transform .12s ease, box-shadow .12s ease, filter .12s ease;
+    }
+    .btn:hover{filter:brightness(1.05); transform: translateY(-1px)}
+    .btn:focus-visible{outline:3px solid var(--ring)}
+    .grid{
+      display:grid; gap:18px; grid-template-columns: 1fr; margin: 20px 0 10px;
+    }
+    @media (min-width: 860px){
+      .hero{grid-template-columns: 1.1fr .9fr}
+      .grid{grid-template-columns: repeat(2, 1fr)}
+      .hero .img img{height:460px}
+    }
+    .card{
+      background:var(--card); border-radius:var(--radius); box-shadow:var(--shadow);
+      overflow:hidden; display:grid; grid-template-rows: auto 1fr;
+    }
+    .card .pic{height:240px; background:#ddd}
+    .card .pic img{width:100%; height:100%; object-fit:cover; display:block}
+    .card .body{padding:18px}
+    .card h3{margin:0 0 8px; font-size:20px}
+    .prices{display:grid; gap:10px; margin:10px 0 0}
+    .price{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      padding:12px 14px; border:1px solid #ececec; border-radius:12px; background:#fff;
+    }
+    .badge{
+      background:#eef7ff; color:#0b6aa3; padding:4px 10px; border-radius:999px; font-weight:600; font-size:12px
+    }
+    footer{
+      padding:28px 0 40px; color:var(--muted); font-size:14px; text-align:center
+    }
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <header aria-label="Контакты и название">
+      <div class="brand">
+        <img src="vz.jpg" alt="Вязанки берёзовых дров у магазина">
+        <div>
+          <h1>Расценки на дрова</h1>
+          <div class="muted">Иван • тел. <strong>724-733</strong></div>
+        </div>
+      </div>
+      <a class="phone" href="tel:724733" aria-label="Позвонить Ивану по номеру 724-733">
+        📞 Позвонить: <strong>724-733</strong>
+      </a>
+    </header>
+
+    <section class="hero" aria-label="Предложение">
+      <div class="img">
+        <img src="3b.jpg" alt="Колотые берёзовые дрова в кузове грузовика, вид сверху">
+      </div>
+      <div class="lead">
+        <h2>Берёзовые дрова: вязанки и колотые с доставкой</h2>
+        <p>Честные цены и быстрая подача. Берёза, разносорт — по выбору. Звоните, уточним наличие и время доставки.</p>
+        <div class="cta">
+          <a class="btn" href="tel:724733">📞 Заказать по телефону 724-733</a>
+          <a class="btn" href="#prices" style="background:#111">Смотреть цены</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices" class="grid" aria-label="Цены">
+      <!-- Карточка: Вязанки -->
+      <article class="card">
+        <div class="pic"><img src="vz.jpg" alt="Вязанка берёзовых дров, аккуратно перевязанные поленья"></div>
+        <div class="body">
+          <h3>Вязанка берёзовых дров <span class="badge">в наличии</span></h3>
+          <div class="prices" role="list">
+            <div class="price" role="listitem">
+              <div>Одна вязанка</div>
+              <div><strong>400 ₽</strong></div>
+            </div>
+          </div>
+          <div class="muted" style="margin-top:10px">Забор самовывозом или вместе с доставкой кубов.</div>
+        </div>
+      </article>
+
+      <!-- Карточка: Колотые с доставкой -->
+      <article class="card">
+        <div class="pic"><img src="3b.jpg" alt="Колотые берёзовые дрова, загруженные в бортовой грузовик"></div>
+        <div class="body">
+          <h3>Колотые дрова с доставкой</h3>
+          <div class="prices" role="list">
+            <div class="price" role="listitem">
+              <div>1 куб</div>
+              <div><strong>5 000 ₽</strong></div>
+            </div>
+            <div class="price" role="listitem">
+              <div>2 куба (берёза)</div>
+              <div><strong>9 000 ₽</strong></div>
+            </div>
+            <div class="price" role="listitem">
+              <div>3 куба (берёза)</div>
+              <div><strong>14 000 ₽</strong></div>
+            </div>
+            <div class="price" role="listitem">
+              <div>3 куба (разносорт)</div>
+              <div><strong>14 000 ₽</strong></div>
+            </div>
+          </div>
+          <div class="muted" style="margin-top:10px">
+            Итог по доставке и разгрузке уточняем по адресу — позвоните, подскажем оптимальный вариант.
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrap" style="padding-left:0;padding-right:0" aria-label="Контакты">
+      <div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:center; margin:24px 0 8px">
+        <a class="btn" href="tel:724733">📞 Позвонить: 724-733</a>
+        <a class="btn" href="#top" style="background:#16a34a">✅ Узнать наличие</a>
+      </div>
+    </section>
+
+    <footer>
+      <div>Иван • тел. <a href="tel:724733"><strong>724-733</strong></a></div>
+    
+    </footer>
+  </div>
+
+</body>
+</html>
